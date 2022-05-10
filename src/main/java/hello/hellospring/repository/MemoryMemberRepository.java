@@ -33,4 +33,8 @@ public class MemoryMemberRepository implements MemberRepository {
     public List<Member> findAll() {     // 자바에서 실무에선 list 많이 씀
         return new ArrayList<>(store.values());
     }
+
+    public void clearStore(){
+        store.clear();
+    }
 }
